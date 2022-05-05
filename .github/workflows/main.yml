@@ -28,8 +28,8 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v2
         with:
-          context: ./Dockerfile
-          file: ./Dockerfile
+          context: ./
+          
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME, secrets.DOCKER_HUB_ACCESS_TOKEN }}/simplewhale:latest
           
