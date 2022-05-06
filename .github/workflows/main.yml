@@ -28,7 +28,7 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
 
       - name: Set up Docker Buildx
-        id: buildkit=1
+        id: buildkit
         uses: docker/setup-buildx-action@v1
 
       - name: Build and push
