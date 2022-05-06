@@ -35,7 +35,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./
-          file: ./java-docker/spring-petclinic/Dockerfile
+          files: ./spring-petclinic/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale:latest
 
